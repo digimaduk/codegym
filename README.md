@@ -1,2 +1,2 @@
 # codegym
-are you ready to learn java?
+Learn Java in a Fun Way
