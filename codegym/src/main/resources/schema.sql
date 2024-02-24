@@ -1,0 +1,27 @@
+CREATE TABLE customers (
+    customer_id NUMBER PRIMARY KEY,
+    first_name VARCHAR2(255) NOT NULL,
+    last_name VARCHAR2(255) NOT NULL,
+    email VARCHAR2(255) NOT NULL,
+    phone_number VARCHAR2(20),
+    address VARCHAR2(1000),
+    active_flag VARCHAR2(1) NOT NULL DEFAULT 'Y',
+    created_by VARCHAR(20) NOT NULL DEFAULT CURRENT_USER,
+    created_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_by VARCHAR(20) DEFAULT CURRENT_USER,
+    updated_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE customers_stg (
+    customer_stg_id NUMBER PRIMARY KEY,
+    first_name VARCHAR2(255) NOT NULL,
+    last_name VARCHAR2(255) NOT NULL,
+    email VARCHAR2(255) NOT NULL,
+    phone_number VARCHAR2(20),
+    address VARCHAR2(1000),
+    active_flag VARCHAR2(1) NOT NULL DEFAULT 'Y',
+    created_by VARCHAR(20) NOT NULL DEFAULT CURRENT_USER,
+    created_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_by VARCHAR(20) DEFAULT CURRENT_USER,
+    updated_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
